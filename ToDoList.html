@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="toDoList">
+<head>
+	<title>To-Do List</title>
+	<link type="text/css" rel="stylesheet" href="ToDoList.css"/> 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="ToDoApp.js"></script>
+</head>
+<body>
+	<div id="main" ng-controller="ToDoListController as toDoListCtrl">
+		<h4>To-Do List</h4>
+		<form name="inputForm" id="inputForm" ng-submit="toDoListCtrl.addTask(newTask)">
+			<input ng-model="toDoListCtrl.task.task" type="text" id="txtbxNewTask" placeholder="To-Do">
+			<input type="submit" id="btnAddNewTask" value ="ADD">
+			<br><br>
+		</form>
+		<div id="listBox" name="display">
+			<ul id ="taskList">Tasks:
+				<li class="listItem" ng-repeat="task in toDoListCtrl.tasks">
+					<input type="checkbox" class="checkbox"  
+						ng-click="toDoListCtrl.toggleCheck(task)">
+					</input>
+					<p class="task" ng-class="{'checkItemOff': task.complete == true}">{{task.task}}</p>
+					<a href='#' class='editLink' ng-click="$ctrl.onEditTask({task: $ctrl.task})">edit</a>
+					<a href='#' class='deleteLink' ng-click="toDoListCtrl.deleteTask(task)">delete</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

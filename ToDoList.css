@@ -1,0 +1,95 @@
+body {
+	font-family: arial;
+}
+
+#main {
+	padding: 150px;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+/*Task bar and Add Button*/
+#txtbxNewTask {
+	display: inline-block;
+	margin: 0px 5px 0px 5px;
+	padding-left: 5px;
+	width: 250px;
+	height: 23px;
+	font-size: 12px;
+	border: 1px solid grey;
+	border-radius: 2px;
+	color: black;
+}
+
+#btnAddNewTask {
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 5px;
+	padding: 6px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 5px;
+	cursor: pointer;
+	color: white;
+}
+
+/* List of Tasks */
+#listBox {
+	width: 350px;
+	min-height: 200px;
+	border: 1px solid black;
+	border-radius: 2px;
+	font-size: 14px;
+	text-align: left;
+	margin: 0px 5px;
+}
+
+#taskList {
+	list-style: none;
+	padding: 0px 0px 0px 5px;
+	margin: 5px 5px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.newListItem {
+	width: 400px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.task {
+	display: inline-block;
+	width: 180px;
+	padding: 2.5px 0px;
+	margin: 5px 0px 5px 0px;
+	text-decoration: none;
+}
+
+.checkItemOff {
+	text-decoration: line-through;
+}
+
+.checkbox {
+	margin: 5px 20px 0px 0px;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+ 	position: relative;
+ 	top: 5px;
+    border-radius: 2px;
+}
+
+.editLink {
+	padding: 2px 7px;
+	border-right: 1px solid #157dec;
+	color: #157dec;
+}
+
+.deleteLink {
+	padding: 2px 5px;
+	color: #157dec;
+}
