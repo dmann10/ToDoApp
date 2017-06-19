@@ -55,12 +55,6 @@ body {
 	font-weight: bold;
 }
 
-.newListItem {
-	width: 400px;
-	font-size: 14px;
-	font-weight: bold;
-}
-
 .task {
 	display: inline-block;
 	width: 180px;
@@ -89,7 +83,30 @@ body {
 	color: #157dec;
 }
 
+ul li .editMode {
+	display: none;
+}
+
+ul li.editMode .editMode {
+	display: initial;
+}
+
+ul li.editMode .task {
+	width: 170px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+ul li.editMode .noEdit {
+	display: none;
+}
+
 .deleteLink {
+	padding: 2px 5px;
+	color: #157dec;
+}
+
+#cancelBtn {
 	padding: 2px 5px;
 	color: #157dec;
 }

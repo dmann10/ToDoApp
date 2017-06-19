@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>To-Do List</title>
+	<link type="text/css" rel="stylesheet" href="style/ToDoList.css"/> 
+</head>
+<body>
+	<div id="main">
+		<h4>To-Do List</h4>
+		<form name="inputForm" id="inputForm">
+			<input type="text" id="txtbxNewTask" placeholder="To-Do">
+			<input type="button" id="btnAddNewTask" value ="ADD">
+			<br><br>
+		</form>
+		<div id="listBox" name="display">
+			<ul id ="taskList">Tasks:</ul>
+		</div>
+		<br>
+		<button type="button" id="removeAllBtn">Remove Completed Tasks</button>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="appJQ/ToDoList2.js"></script>
+</body>
+</html>
